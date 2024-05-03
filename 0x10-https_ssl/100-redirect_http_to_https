@@ -41,7 +41,7 @@ frontend smart-schools-frontend
         default_backend smart-schools-backend
 
 frontend smart-schools-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/clickviral.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/smart-schools.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend smart-schools-backend
 
